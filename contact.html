@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>WEBHIVE TECH</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300|Nunito:400,700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="vendor/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Main Stylesheet -->
+        <link href="./css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    </head>
+
+    <body>
+      
+        <!-- Header Section -->
+<header class="header">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <div class="logo">
+      <h1><a href="index.html">WEBHIVE TECH</a></h1>
+    </div>
+
+    <!-- Navbar (Visible on Large Screens) -->
+    <nav class="navbar" id="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger Icon (For Small Screens) -->
+    <div class="menu-icon" id="menu-icon">
+      <i class="lnr lnr-menu"></i>
+    </div>
+
+    <!-- Sidebar Menu (For Small Screens) -->
+    <nav class="sidebar-menu" id="sidebar-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+  </div>
+</header>
+
+<script>
+// Get Elements
+const menuIcon = document.getElementById("menu-icon");
+const sidebarMenu = document.getElementById("sidebar-menu");
+const overlay = document.getElementById("overlay");
+
+// Open Sidebar Menu
+menuIcon.addEventListener("click", () => {
+sidebarMenu.classList.add("active");
+overlay.classList.add("active");
+});
+
+// Close Sidebar Menu
+overlay.addEventListener("click", () => {
+sidebarMenu.classList.remove("active");
+overlay.classList.remove("active");
+});
+
+</script>
+
+        <!-- Banner Section Start-->
+        <section class="banner">
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="banner-nav">
+                        <div class="banner-box">
+                            <a href="index.html">Home </a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner Section End-->
+
+        <!-- Contact Section Start -->
+        <section class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-title">Contact Us</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra ligula nec hendrerit. Ut eu libero nec magna placerat fringilla.
+                    </p>
+                </div>
+
+                <div class="row contact-info">
+                    <div class="col-md-4">
+                        <div class="contact-address">
+                            <i class="ion-md-pin"></i>
+                            <h3>Address</h3>
+                            <address>Your Location, City, Country</address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-phone">
+                            <i class="ion-md-call"></i>
+                            <h3>Phone Number</h3>
+                            <p><a href="tel:+123-456-789">+123-456-789</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-email">
+                            <i class="ion-md-mail"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@example.com">info@example.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26361250.667320687!2d-113.75533773453304!3d36.24128894212527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1574923227698!5m2!1sen!2sbd" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form">
+                        <form class="contactForm" method="POST" action="./php/contact.php">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+                                </div>`
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" required />
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <div><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+
+        <!-- Footer Start -->
+<footer class="footer">
+  <div class="footer-top">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-info">
+                  <h3>WEBHIVE TECH</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tortor commodo, sollicitudin velit nec, lobortis erat.</p>
+              </div>
+
+              <div class="footer-links">
+                  <h4>About Us</h4>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Our services</a></li>
+                      <li><a href="#">Terms & condition</a></li>
+                      <li><a href="#">Privacy policy</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-contact">
+                  <h4>Contact Us</h4>
+                  <p>
+                      Your Location<br>
+                      Your City, Your Country<br>
+                      <strong>Phone:</strong> +123-456-7890<br>
+                      <strong>Email:</strong> info@example.com<br>
+                  </p>
+                  <div class="social-links">
+                    <a href="https://twitter.com/"><i class="ion-logo-twitter"></i></a>
+                    <a href="https://facebook.com/"><i class="ion-logo-facebook"></i></a>
+                    <a href="https://linkedin.com/"><i class="ion-logo-linkedin"></i></a>
+                    <a href="https://instagram.com/"><i class="ion-logo-instagram"></i></a>
+                    <a href="https://yutube.com/"><i class="ion-logo-youtube"></i></a>
+                </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container copyright">
+      &copy; Copyright WEBHIVE TECH. All Rights Reserved
+  </div>
+</footer>
+<!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="ion-md-arrow-dropup"></i></a>
+
+        <!-- Vendor JS Files -->
+         
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery/jquery-migrate.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/easing/easing.min.js"></script>
+        <script src="vendor/superfish/hoverIntent.js"></script>
+        <script src="vendor/superfish/superfish.min.js"></script>
+        <script src="vendor/waypoints/waypoints.min.js"></script>
+        <script src="vendor/touchSwipe/jquery.touchSwipe.min.js"></script>
+        <script src="vendor/counterup/counterup.min.js"></script>
+        <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+        <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendor/lightbox/js/lightbox.min.js"></script>
+
+       <!--main javascriptfile-->
+       <script src="./js/main.js">
+
+      
+       </script>
+    </body>
+</html>
